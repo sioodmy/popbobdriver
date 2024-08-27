@@ -13,8 +13,8 @@
       imports = [inputs.treefmt-nix.flakeModule];
       perSystem = {pkgs, ...}: {
         packages = rec {
-          schizosearch = pkgs.callPackage ./default.nix {};
-          default = schizosearch;
+          popbobdriver = pkgs.callPackage ./default.nix {};
+          default = popbobdriver;
         };
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [

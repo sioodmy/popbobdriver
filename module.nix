@@ -5,7 +5,7 @@ inputs: {
   ...
 }: let
   inherit (pkgs.stdenv.hostPlatform) system;
-  cfg = config.services.schizosearch;
+  cfg = config.services.popbobdriver;
 
   package = inputs.self.packages.${system}.default;
   inherit (lib) mkOption mkEnableOption types mkIf;
