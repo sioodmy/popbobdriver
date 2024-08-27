@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  width: 80vw;
+  border: 1px solid black;
+}
+
+#search-results {
+  font-size: 3rem;
+  text-align: center;
+}
+
+img {
+  width: 10rem;
+  position: absolute;
+  top: 60%;
+  left: 48%;
+}

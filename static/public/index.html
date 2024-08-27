@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PopbobDriver</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+    <main>
+      <h1>PopbobDriver :3</h1>
+      <span class="htmx-indicator"> Hold on... </span>
+      <div>
+        <input
+          class="form-control"
+          type="search"
+          name="search"
+          placeholder="wklej pytanie >_<"
+          hx-post="/search"
+          hx-trigger="input changed delay:500ms, search"
+          hx-target="#search-results"
+          hx-indicator=".htmx-indicator"
+        />
+        <div id="search-results"></div>
+      </div>
+      <img src="popbob.webp" alt="meow :33" />
+    </main>
+  </body>
+</html>
